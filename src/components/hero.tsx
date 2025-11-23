@@ -23,7 +23,7 @@ const ZKGuardHero = () => {
             </div>
 
             {/* Main heading */}
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+            <h1 className="text-3xl md:text-4xl lg:text-4xl font-bold leading-tight">
               <span className="text-white">Shield Your Digital Assets with </span>
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">
                 ZK Guard AI
