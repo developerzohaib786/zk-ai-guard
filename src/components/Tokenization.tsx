@@ -85,9 +85,13 @@ const TokenomicsSection: FC = () => {
 
         {/* Image of the Tokenomics Tree Diagram */}
         <div className="w-full flex justify-center">
-          <img
-            src={imageUrl}
-            alt="Tokenomics Distribution Diagram"
+<img
+  src={imageUrl}
+  style={{
+    width: '90vw',
+    height: '90vh'
+  }}
+  alt="Tokenomics Distribution Diagram"
             className="w-full h-auto max-w-5xl"
             onError={(e) => {
               e.currentTarget.onerror = null;

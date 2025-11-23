@@ -20,8 +20,8 @@ const slides: Slide[] = [
     content: {
       heading: "Installation Guide",
       points: [
-        "Download the ZK Guard AI Desktop App by clicking the button below. Once the .exe file is downloaded, simply double-click to begin installation. The setup is automatic and takes just a few seconds.",
-        "After installation is complete, you're all set. Just launch the app and start monitoring traffic, scanning files, encrypting data, and managing passwords, all from one place.",
+        "Download the ZK Guard AI Desktop App by clicking the button below. Once the .exe file is downloaded, simply.",
+        "After installation is complete, you're all set. Just launch the app and start monitoring traffic, scanning files, encrypting data,.",
         "ZK Guard AI is built to be lightweight, fast, and ready out of the box. No complex setup. Just install, open, and protect your device instantly."
       ]
     }
@@ -33,9 +33,9 @@ const slides: Slide[] = [
     content: {
       heading: "Installation Guide",
       points: [
-        "Download the ZK Guard AI for macOS by clicking the button below. Once the .dmg file is downloaded, open it and drag the app to your Applications folder.",
-        "After installation, launch ZK Guard AI from your Applications. Grant necessary permissions when prompted to enable full protection features.",
-        "Experience seamless integration with macOS. Monitor your system, encrypt files, and manage security with an intuitive native interface."
+        "Download the ZK Guard AI for macOS by clicking the button below. Once the .dmg file is downloaded, open it and drag the .",
+        "After installation, launch ZK Guard AI from your Applications. Grant necessary permissions when prompted to enable .",
+        "Experience seamless integration with macOS. Monitor your system, encrypt files, and manage security with an ."
       ]
     }
   },
@@ -46,9 +46,9 @@ const slides: Slide[] = [
     content: {
       heading: "Installation Guide",
       points: [
-        "Download the ZK Guard AI AppImage or .deb package. For AppImage, make it executable and run. For .deb, use your package manager or double-click to install.",
-        "Launch the application and configure your preferred security settings. ZK Guard AI integrates seamlessly with your Linux environment.",
-        "Enjoy robust security features optimized for Linux. Lightweight, efficient, and designed for power users who demand the best protection."
+        "Download the ZK Guard AI AppImage or .deb package. For AppImage, make it executable and run. For.",
+        "Launch the application and configure your preferred security settings. .",
+        "Enjoy robust security features optimized for Linux. Lightweight, efficient, and designed for power."
       ]
     }
   }
