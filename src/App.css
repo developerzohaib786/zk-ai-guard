@@ -132,3 +132,32 @@
           stroke-dashoffset: 100;
           animation: draw-line 2s linear forwards;
         }
+        /* Mobile menu slide-in from right */
+        @keyframes slide-in-right {
+          0% {
+            transform: translateX(12px);
+            opacity: 0;
+          }
+          100% {
+            transform: translateX(0);
+            opacity: 1;
+          }
+        }
+        .animate-slide-in-right {
+          animation: slide-in-right 220ms cubic-bezier(.22,.9,.32,1) both;
+        }
+        /* Navbar link underline-on-hover */
+        .nav-link {
+          text-decoration: underline;
+          text-decoration-thickness: 2px;
+          text-decoration-color: transparent;
+          -webkit-text-decoration-color: transparent;
+          text-underline-offset: 6px;
+          transition: text-decoration-color 150ms ease, transform 120ms ease;
+        }
+        .nav-link:hover,
+        .nav-link:focus {
+          text-decoration-color: #3b82f6; /* Tailwind blue-500 */
+          -webkit-text-decoration-color: #3b82f6;
+          transform: translateY(-1px);
+        }

@@ -1,5 +1,4 @@
-import React from 'react';
-import { Shield, Lock, Bot } from 'lucide-react';
+import { Lock } from 'lucide-react';
 
 const ZKGuardHero = () => {
  return (
@@ -9,9 +8,11 @@ const ZKGuardHero = () => {
       <div className="absolute top-40 left-1/4 w-4 h-4 border-2 border-blue-400/30 rotate-45 animate-pulse"></div>
       <div className="absolute bottom-40 right-1/3 w-3 h-3 bg-cyan-400/30 rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
       <div className="absolute top-1/3 right-1/4 w-2 h-2 bg-blue-400/40 animate-pulse" style={{ animationDelay: '1.5s' }}></div>
+
       {/* Main content */}
       <div className="relative z-10 flex items-center">
         <div className="w-full px-8 py-10 grid md:grid-cols-2 gap-12 items-center">
+          
           {/* Left side - Text content */}
           <div className="space-y-8 max-w-none pr-8">
             {/* Small header */}
@@ -46,7 +47,7 @@ const ZKGuardHero = () => {
           </div>
 
           {/* Right side - Shield illustration */}
-          <div className="relative flex items-center justify-center">
+          <div className="relative hidden md:flex items-center justify-center">
             {/* Glowing effect behind shield */}
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-pulse"></div>
@@ -99,11 +100,10 @@ const ZKGuardHero = () => {
               </div>
             </div>
           </div>
+
         </div>
       </div>
 
-      {/* Decorative X symbol bottom left */}
-      {/* <div className="absolute bottom-20 left-20 text-blue-400/20 text-6xl font-bold">×</div> */}
     </div>
   );
 };

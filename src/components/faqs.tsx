@@ -1,5 +1,5 @@
-import React, { useState, FC } from 'react';
-import { Plus, Minus, ChevronDown } from 'lucide-react';
+import { useState, type FC } from 'react';
+import { Plus } from 'lucide-react';
 
 // Define the type for an individual FAQ item
 interface FaqItem {

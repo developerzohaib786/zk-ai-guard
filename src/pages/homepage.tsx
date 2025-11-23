@@ -1,4 +1,3 @@
-import React from 'react'
 import Hero from '@/components/hero'
 import FeaturesSection from '@/components/hero-second'
 import Tokenization from '@/components/Tokenization'

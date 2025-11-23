@@ -1,11 +1,11 @@
-import React, { FC } from 'react';
-import { Globe, X, Send, GitBranch, Download, BookOpen, Shield, Box, LayoutGrid } from 'lucide-react';
+import { type FC } from 'react';
+import { Globe, X, Send, GitBranch} from 'lucide-react';
 
 // Define structure for navigation links
 interface NavLink {
     label: string;
     href: string;
-    icon?: FC<any>;
+    icon?: FC<unknown>;
 }
 
 // Data for the two link columns
