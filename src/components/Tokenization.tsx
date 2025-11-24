@@ -89,16 +89,17 @@ const TokenomicsSection: FC = () => {
   src={imageUrl}
   style={{
     width: '90vw',
-    height: '90vh'
+
+    height: 'auto'
   }}
   alt="Tokenomics Distribution Diagram"
-            className="w-full h-auto max-w-5xl"
-            onError={(e) => {
-              e.currentTarget.onerror = null;
-              e.currentTarget.src =
-                'https://placehold.co/800x600/1e3a8a/93c5fd?text=Error:+Image+Failed+to+Load';
-            }}
-          />
+  className="w-full max-w-5xl md:!h-[90vh]"
+  onError={(e) => {
+    e.currentTarget.onerror = null;
+    e.currentTarget.src =
+      'https://placehold.co/800x600/1e3a8a/93c5fd?text=Error:+Image+Failed+to+Load';
+  }}
+/>
         </div>
       </div>
     </div>
