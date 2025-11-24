@@ -126,21 +126,24 @@ const ZKGuardCarousel: React.FC = () => {
           {/* Main Content Container - Flex column on mobile, Grid on desktop */}
           <div className="flex flex-col gap-8 md:grid md:grid-cols-2 md:gap-8 md:items-center">
             
-            {/* 1. Left Prism (Carousel) */}
+            {/* 1. Left Prism (Carousel) - MODIFIED WIDTH/HEIGHT FOR MOBILE */}
             <div className="order-1 flex justify-center" style={{ perspective: '1200px' }}>
-              <div className="relative w-64 h-80 md:w-80 md:h-96"> 
+              {/* Change w-64 h-80 to w-48 h-60 on mobile, keeping md:w-80 md:h-96 for desktop */}
+              <div className="relative w-48 h-60 md:w-80 md:h-96"> 
                 <div 
                   className="absolute inset-0 transition-transform duration-800 ease-in-out"
                   style={{ transformStyle: 'preserve-3d', transform: `rotateY(${rotation}deg)` }}
                 >
                   {slides.map((slide, i) => (
                     <div key={i} className="absolute inset-0 flex items-center justify-center"
+                      // Keep translateZ at 138px for desktop. You could adjust this for mobile if needed, but the smaller w/h should suffice.
                       style={{ transformStyle: 'preserve-3d', transform: `rotateY(${i*120}deg) translateZ(138px)` }}
                     >
                       <div className="relative bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-xl border-2 border-blue-500/30 rounded-3xl p-6 md:p-12 shadow-2xl w-full h-full flex flex-col items-center justify-center">
-                        <div className="text-6xl md:text-8xl mb-4 md:mb-6 filter drop-shadow-2xl">{slide.icon}</div>
-                        <h3 className="text-2xl md:text-3xl font-bold text-white mb-1 md:mb-2">{slide.title}</h3>
-                        <p className="text-lg md:text-xl text-blue-300">{slide.subtitle}</p>
+                        {/* Adjust icon and text sizes for mobile */}
+                        <div className="text-5xl md:text-8xl mb-3 md:mb-6 filter drop-shadow-2xl">{slide.icon}</div>
+                        <h3 className="text-xl md:text-3xl font-bold text-white mb-1 md:mb-2">{slide.title}</h3>
+                        <p className="text-base md:text-xl text-blue-300">{slide.subtitle}</p>
                       </div>
                     </div>
                   ))}
